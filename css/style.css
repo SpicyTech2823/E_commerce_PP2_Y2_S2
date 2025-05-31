@@ -13,14 +13,11 @@ body {
 /* Navigation Bar */
 .nav {
    display: flex;
-   margin-top: 20px;
    justify-content: space-between;
    align-items: center;
-   background-color: white;
-   padding: 10px 20px;
-   border: gray 1px solid ;
+   background-color: rgb(40, 82, 90);
+   padding: 30px 40px;
    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-   border-radius: 20px;
 }
 
 /* Logo and Title */
@@ -29,17 +26,19 @@ body {
    align-items: center;
    position: absolute;
    left: 20px;
+   
 }
 
 .logo {
    height: 40px;
    margin-right: 10px;
+   color: white;
 }
 
 .title {
    font-size: 1em;
    font-weight: bold;
-   color: #333;
+   color: white;
 }
 
 /* Navigation Links */
@@ -54,8 +53,9 @@ body {
 
 .nav ul li a {
    text-decoration: none;
-   color: #333;
-   font-weight: 600;
+   color: white;
+   font-weight: 400;
+   font-family:Arial;
 }
 
 .nav ul li a:hover {
@@ -82,6 +82,7 @@ body {
 .icon {
    font-size: 1.2em;
    position: relative;
+   color: #fff;
 }
 .icon:hover {
    color: #007BFF;
@@ -108,7 +109,7 @@ ul li {
   top: 100%; /* Places submenu directly below the parent */
   width: 100px;
   display: none;
-  background-color: white;
+  background-color: grey;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 5px;
@@ -226,12 +227,23 @@ footer{
    top: 0;
    position: relative;
    top: 100vh;
-   
+   opacity: 0;
+   animation: fadeIn 2s ease-in forwards;
+   animation-delay: 0.5s; 
+}
+ @keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }  
 }
 .footer-col{
    width: 25%;
    padding: 0 15px;
 }
+
 .footer-col h4{
    font-size: 20px;
    color: #fff;
@@ -279,8 +291,92 @@ footer{
    color:#007BFF;
    transform: scale(1.2);
 }
+/* Delivery page */
 
+.delivery-info{
+   position: relative;
+   top: 7rem;
+   left: 120px;
+   
+}
+.delivery-info h3{
+  font-size: 25px;
+   font-weight: 5px;
+   margin-bottom: 20px;
+   font-family: serif;
+   margin-left: 80px;
+}
+.delivery-list li input{
+   font-size: 15px;
+   font-weight: normal;
+   margin-top: 20px;
+   font-family: poppins;
+   height: 30px;
+   width: 300px;
 
+}
+.payment-method{
+   position: relative;
+   gap: 20px;
+   bottom: 135px;
+   left: 120vh;
+   margin-bottom: 50px;
+}
+.payment-method h3{
+   font-size: 25px;
+   font-weight: 5px;
+   margin-bottom: 30px;
+   font-family: serif;
+   margin-left: 100px;
+}
+.payment-list{
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   gap: 20px;
+}
+.payment-logo{
+   border-radius: 10px;
+   width: 40px;
+   height: 30px;
+   font-size: 20px;
+   background-color:white;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+}
+.pay-info{
+   position: relative;
+   top: 2.5rem;
+}
+.pay-info li{
+   font-size: 20px;
+   font-weight: normal;
+   font-family: poppins;
+   line-height: 1.6;
+}
+.pay-info li input{
+   font-size: 15px;
+   font-weight: normal;
+   margin-top: 20px;
+   font-family: poppins;
+   height: 30px;
+   width: 300px;
+}
+body.fade-in{
+   animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+   
 
 
 
