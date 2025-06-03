@@ -342,8 +342,8 @@ footer{
    font-size: 20px;
    background-color:white;
    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-
 }
+
 .pay-info{
    position: relative;
    top: 2.5rem;
@@ -375,6 +375,234 @@ body.fade-in{
     transform: translateY(0);
   }
 }
+/* Responsive contact page */
+/* General reset */
+.container-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 5%;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    gap: 40px;
+}
+
+/* Left section */
+.our-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.our-info h2,
+.customer-touch h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.contact-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-list li {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #555;
+}
+
+.contact-list i {
+    color: rgb(40, 82, 90);
+    font-size: 18px;
+}
+
+/* Right section */
+.customer-touch {
+    flex: 1;
+    min-width: 300px;
+}
+
+.customer-touch form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.customer-touch input,
+.customer-touch textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+    transition: border 0.3s;
+}
+
+.customer-touch input:focus,
+.customer-touch textarea:focus {
+    border-color: rgb(40, 82, 90);
+    outline: none;
+}
+
+.customer-touch button {
+    background-color:  rgb(40, 82, 90);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.customer-touch button:hover {
+    background-color:  rgb(69, 112, 121);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+   .container-contact {
+      flex-direction: column;
+      padding: 30px 20px;
+   }
+}
+/* Shop responsive */
+.text-shop{
+   padding: auto;
+   position: relative;
+   top: 3rem;
+   left: 200px;
+   font-size: 30px;
+   font-weight: normal;
+   font-family: serif;
+}
+#shop-image{
+   position: relative;
+   bottom: 17rem;
+   right: 0;
+   left: 800px;
+   width: 300px;
+   height: 450px;
+   transform: scale(0.5) rotate(-10deg);
+   opacity: 0;
+   animation: imageZoom 2s ease-in-out forwards;
+   animation-delay: 1s;
+}
+/* Keyframes for image */
+@keyframes imageZoom {
+   from {
+   transform: scale(0.5) rotate(-10deg);
+   opacity: 0;
+  }
+   to {
+   transform: scale(1) rotate(0deg);
+   opacity: 1;
+  }
+}
+   
+.btn-shop {
+  position: absolute;
+  top: 32rem;
+  left: 200px;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #28525A; 
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease all;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.btn-shop:hover {
+  background-color: #45626c; 
+  transform: translateY(-2px);
+}
+/* animation shop page text */
+.animate-shop-text{
+   font-size: 2.5rem;
+   opacity: 0;
+   animation: fadeSlideIn 1s ease-in-out forwards;
+   animation-delay: 0.5s;}
+/* Keyframes for text */
+@keyframes fadeSlideIn {
+  to {
+   opacity: 1;
+   transform: translateY(0);
+  }
+  from {
+   opacity: 0;
+   transform: translateY(30px);
+  }
+}
+/* item list */
+.item-list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding: 20px;
+   margin-top: 50px;
+}
+.item{
+   background-color: #f9f9f9;
+   border: 1px solid #ddd;
+   border-radius: 10px;
+   padding: 20px;
+   width: 250px;
+   height: 350px;
+   text-align: center;
+   margin-bottom: 40px;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+   transition: all 0.3s ease;
+}
+.item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.item button{
+   background-color: #28525A;
+   color: white;
+   border: none;
+   padding: 10px 15px;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 13px;
+   margin-top: -15px;
+   transition: background-color 0.3s ease;
+}
+.item button:hover {
+   background-color: #45626c;
+}
+.item p {
+   font-size: 18px;
+   margin: 15px 0;
+   font-family: 'Poppins', sans-serif;
+}
+.item:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+#product-image{
+   width: 100%;
+   height: 200px;
+   object-fit: cover;
+   border-radius: 10px;
+   margin-bottom: 15px;
+}
+
+
+
+
 
    
 
