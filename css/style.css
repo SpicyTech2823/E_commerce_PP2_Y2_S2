@@ -8,6 +8,7 @@
 
 body {
    font-family: Arial, sans-serif;
+   background-color: #f1e9e4;
 }
 
 /* Navigation Bar */
@@ -59,9 +60,9 @@ body {
 }
 
 .nav ul li a:hover {
-   color: #007BFF;
+   color: #f7e7dc;
    transition: color 0.3s ease;
-   border-bottom: 2px solid #007BFF;
+   border-bottom: 2px solid #f7e7dc;
 }
 
 /* Right Side Icons */
@@ -85,7 +86,7 @@ body {
    color: #fff;
 }
 .icon:hover {
-   color: #007BFF;
+   color: #f7e7dc;
 }
 
 .cart-count {
@@ -202,7 +203,7 @@ p{
    right: 300px;
 }
 .fa-solid.fa-check{
-   color: #23b937;
+   color: #f7e7dc;
    margin-right: 10px;
    font-size: 30px;
    font-weight: bold;
@@ -222,7 +223,7 @@ ul{
 
 }
 footer{
-   background-color: rgb(95, 88, 88);
+   background-color: rgb(40, 82, 90);
    padding: 70px 0;
    top: 0;
    position: relative;
@@ -253,7 +254,7 @@ footer{
    border-bottom: 3px solid #fff;
 }
 .footer-col h4:hover{
-   color: #23b937;
+   color: #f7e7dc;
    padding-bottom: 10px;
 }
 
@@ -599,6 +600,7 @@ body.fade-in{
    border-radius: 10px;
    margin-bottom: 15px;
 }
+
 
 
 
