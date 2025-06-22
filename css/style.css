@@ -453,18 +453,18 @@ body.fade-in{
 }
 
 .customer-touch button {
-    background-color:  rgb(40, 82, 90);
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s;
+   background-color:  rgb(40, 82, 90);
+   color: white;
+   padding: 12px;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   font-weight: bold;
+   transition: background-color 0.3s;
 }
 
 .customer-touch button:hover {
-    background-color:  rgb(69, 112, 121);
+   background-color:  rgb(69, 112, 121);
 }
 
 /* Responsive */
@@ -551,6 +551,7 @@ body.fade-in{
    justify-content: center;
    padding: 20px;
    margin-top: 50px;
+   gap: 20px;
 }
 .item{
    background-color: #f9f9f9;
@@ -577,7 +578,8 @@ body.fade-in{
    border-radius: 5px;
    cursor: pointer;
    font-size: 13px;
-   margin-top: -15px;
+   width: 50px;
+   margin-top: -13px;
    transition: background-color 0.3s ease;
 }
 .item button:hover {
